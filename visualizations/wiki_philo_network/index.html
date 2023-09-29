@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- metadata -->
+<head>
+    <title>PhiloNet</title>
+    <meta name="description" content="">
+    <meta name="author" content="Junyi Tao">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <link rel='stylesheet' href='css/index.css'>
+</head>
+
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+</style>
+
+<body>
+
+<main>
+
+<h1>Missing Voices in the History of Philosophy</h1>
+
+
+<p id="subtitle"> 
+    Project Vox Story+ 2022 Team:
+    <br>Junyi Tao, Karen Nielsen, Kelsey Brod, and Emilie Menzel
+    <br>Project Vox Directors: Andrew Janiak and Liz Milewicz
+</p>
+
+
+<p>
+    <!-- Can you name five women philosophers?
+    <br> Although there are many women who have done extraordinary philosophical work and have significantly influenced other philosophers of their time, their presence and contributions have been overlooked and excluded from the philosophical cannon (Witt and Lisa, 2021). -->
+    <br> <a href="https://projectvox.org/" target="_blank">Project Vox</a> aims to highlight philosophical works from marginalized individuals traditionally excluded from the philosophical canon.
+</p>
+
+<p id="subtitle"> 
+    
+</p>
+
+<p>
+    We are updating a series of blogs about this project on Project Vox website: 
+    <a href="https://projectvox.org/behind-the-scenes/behind-the-scenes-network-visualization-story-project/" target="_blank">Blog #1</a>
+    
+    <br>The video below explains <strong>what we have found</strong> through this research and how the <strong>WikiNet visualization</strong> works. 
+    It is also our presentation at Story+ Research Symposium 2022. <a href="https://www.youtube.com/watch?v=oXXdSLLf0Mg" target="_blank">[YouTube Link]</a>
+    
+    <br>
+    <br>
+    <video width=100% poster="assets/images/video_cover.jpg" controls>
+        <source src="assets/pre_storyplus_Symposium_2022.mp4" type="video/mp4">
+        <!-- <source src="movie.ogg" type="video/ogg"> -->
+      Your browser does not support the video tag.
+      </video> 
+
+      <br>&#9830; <a href="InfluNet.html" target="_blank" style="font-size: 17px; color: #114d9c; font-weight: 600; text-decoration: underline;">Click here</a> to access Wiki InfluNet
+
+    <br>&#9830; Information 
+    <br>- philosopher list: <a href="https://en.wikipedia.org/wiki/List_of_philosophers_(A%E2%80%93C)" target="_blank">link</a>
+    <br>- women philosopher list: <a href="https://en.wikipedia.org/wiki/List_of_women_philosophers" target="_blank">link</a>
+    
+    <table style="width:80%" class="center">
+        <tr>
+          <th>Version</th>
+          <th>Data Source</th>
+          <th>Retrieval Date</th>
+          <th>Nodes</th>
+          <th>Links</th>
+          <th>Graph Algorithm</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>05-28-2022</td>
+          <td>DBpedia</td>
+          <td>philosopher list</td>
+          <td>Influ list recorded</td>
+          <td>PageRank</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>05-28-2022</td>
+            <td>DBpedia</td>
+            <td>philosopher list + women philosopher list</td>
+            <td>Influ list recorded</td>
+            <td>PageRank</td>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td>05-28-2022</td>
+            <td>DBpedia</td>
+            <td>philosopher list + women philosopher list</td>
+            <td>Infered influ list from records</td>
+            <td>PageRank</td>
+        </tr>
+        <tr>
+            <td>2.2</td>
+            <td>05-28-2022</td>
+            <td>DBpedia</td>
+            <td>philosopher list + women philosopher list</td>
+            <td>Infered influ list from records</td>
+            <td>Degree Centrality</td>
+        </tr>
+        <tr>
+            <td>2.3</td>
+            <td>05-28-2022</td>
+            <td>DBpedia</td>
+            <td>philosopher list + women philosopher list</td>
+            <td>Infered influ list from records</td>
+            <td>Closeness Centrality</td>
+        </tr>
+        <tr>
+            <td>2.4</td>
+            <td>05-28-2022</td>
+            <td>DBpedia</td>
+            <td>philosopher list + women philosopher list</td>
+            <td>Infered influ list from records</td>
+            <td>Betweenness Centrality</td>
+        </tr>
+      </table> 
+    
+
+    <!-- <br>&#9830; Network view: To contrast the men philosophers centered in the canons with marginalized women philosophers, revealing the bias in data that the influence and contributions of female philosophers have been ignored.
+    <br>&#9830; Timeline view: To show that women philosophers are unjustly ignored and excluded from the narrative of the history of philosophy.
+     -->
+
+</p>
+<h2>Other Interactive visualizations</h2>
+<p>Want to know how to explore the visualizations?<a href="guide.html" target="_blank"  style="font-size: 18px; color: #38117b; font-weight: 600; font-family: 'Times New Roman', Times, serif;">
+    Click this!
+    </a> </p>
+<p>
+    <br>&#9830; (Academic/educational) <a href="womenPhiloFaculty.html" target="_blank" style="font-size: 16px; color: #1c37ad; font-weight: 600; text-decoration: underline;">Gender Composition</a>
+     To introduce and appreciate the intelligence of women philosophers and their contributions to philosophy.
+
+    <br>&#9830; (Social) <a href="philoTwitterFollowers.html" target="_blank" style="font-size: 16px; color: #1c37ad; font-weight: 600; text-decoration: underline;">Philosopher Community on Social Media</a>
+     To demonstrate the gender ratio of faculty members in philosophy programs.
+     
+    <br>&#9830; (Conceptual) <a href="starmap.html" target="_blank"  style="font-size: 16px; color: #1c37ad; font-weight: 600; text-decoration: underline;">Intellectual Universe</a>
+    To summarize and compare today's women and men philosophers' activity and popularity on Twitter.
+
+    <!-- <img src="/assets/background.jpg" width=100%> -->
+</p>
+
+
+
+
+<h2>References</h2>
+
+<h3>
+    Inspiration and Resources
+</h3>
+
+<ul>
+    <li>Highlight marginalized women philosophers - <a href="https://projectvox.org/">Project Vox</a></li>
+    <li>Philosophy and art visualization: <a href="https://dailynous.com/tag/visualization/">Daily Nous visualization collection</a></li>
+    <li>Many of <a herf="https://homepage.univie.ac.at/maximilian.noichl/">Maximilian Noichl</a>'s visualizations</li>
+</ul>
+
+<h3>
+    Data
+</h3>
+<ul>
+
+    <li>Philosophers dictionary and influence: <a href="https://www.wikipedia.org/">Wikipedia/DBpedia</a></li>
+    <li>Women philosophers dictionary: <a href="https://en.wikipedia.org/wiki/List_of_women_philosophers">List of women philosophers - Wikipedia</a></li>
+    <li>Philosopher on Twitter: 
+        <br>Kelly Truelove. (2022). Philosophers on Twitter. Retrieved May 09, 2022, from [https://truesciphi.org/phi.html](https://truesciphi.org/phi.html)
+    <li>Women philosophers dictionary, keywords, and concepts:
+        <br>Hagengruber and Waithe. (n.d.). The Encyclopedia of Concise Concepts by Women Philosophers. Retrieved May 09, 2022, from [https://historyofwomenphilosophers.org/ecc/#hwps](https://historyofwomenphilosophers.org/ecc/#hwps)</li>
+    <li>Women faculty in Philosophy: 
+        <br>Peterson and Hustoft. (2021). Second Wave Survey of Women’s Representation in U.S. Philosophy Graduate Programs. Retrieved May 07, 2022, from https://doi.org/10.7910/DVN/IJZW8Y
+    <li>Gregory R. Peterson and Zayna Hustoft. 2020. Methodology for Second Wave Survey of Women’s Representation in U.S. Philosophy Graduate Programs.</li>
+    <li>Philosophy topics and articles: <a href="https://plato.stanford.edu/">Stanford Encyclopedia of Philosophy</a></li>
+    <li>Philosophy taxonomy: <a href="https://www.inphoproject.org/">The Internet Philosophy Ontology (InPhO) project</a></li>
+</ul>
+
+<h3>
+    Literature Review
+</h3>
+
+<ul>
+    <li>D'Ignazio, Catherine, and Lauren F. Klein. 2020. Data feminism. <a href="https://datafeminism.io/">website</a></li>
+    <li>Drucker, Johanna, “Humanities Approaches to Graphical Display,” Digital Humanities Quarterly, 5.1 (2011). http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html.
+    <li>Lavin, Matthew, “Why Digital Humanists Should Emphasize Situated Data over Capta,” Digital Humanities Quarterly, 15.2 (2021). http://digitalhumanities.org:8081/dhq/vol/15/2/000556/000556.html</li>
+    <li>Guido Bonino, Paolo Maffezioli and Paolo Tripodi, “Two Quantitative Researches in the History of Philosophy”, Journal of Interdisciplinary History of Ideas [Online], 16 | 2019, Online since 01 March 2020, connection on 07 May 2022. URL: http://journals.openedition.org/jihi/324</li>
+    <li>Witt, Charlotte and Lisa Shapiro, "Feminist History of Philosophy", *The Stanford Encyclopedia of Philosophy* (Summer 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2021/entries/feminism-femhist/></li>
+</ul>
+
+<h3>
+    Code <a href="InfluNet/LICENSE">(See License)</a>
+</h3>
+
+<ul>
+    <li>Force-direct graph and timeline layout: <a href="https://github.com/S4N0I/theschoolofathens">theschoolofathens</a></li>
+    <li>Starmap<a href="https://observablehq.com/@d3/star-map">ObservableHQ @mbostock</a></li>
+    <li>Packages used to build visualization:
+        <a href="https://d3js.org/">d3.js</a>, 
+        <a href="https://materializecss.com/">materialize</a>,  
+        <a href="https://plotly.com/graphing-libraries/">plotly</a>
+        
+    </li>
+    <li>Packages used to extract, preprocess, and compute data (may not be exhaustive):
+        <a href="https://docs.python.org/3/library/json.html">json</a>, 
+        <a href="https://pandas.pydata.org/">pandas</a>,
+        <a href="https://networkx.github.io/">networkx</a>
+    </li>
+</ul>
+
+
+<h3>
+    Images
+</h3>
+
+<p>
+Background image source: <a href="https://unsplash.com/photos/fhOQfT1eVEA">unsplash @Eilis Garvey</a>
+</p>
+<!-- 
+<h2>Roles and responsibilities</h2>
+<p>
+    Brainstorming and idealization: Junyi Tao
+
+    <br>Data searching, extraction, and cleaning: Junyi Tao
+    
+    <br>Visualization building and publishing: Junyi Tao
+    
+    <br>Writing and editing: Junyi Tao</p> -->
+
+</main>
+
+</body>

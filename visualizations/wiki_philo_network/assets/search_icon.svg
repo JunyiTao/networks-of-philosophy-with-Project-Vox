@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+    height="26" viewBox="0 0 24 24" width="24">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" 
+        fill="#061d87"/>
+</svg>
+
+
+
+
+<!-- svg {
+  background-color: #aaa;
+} -->
+
+<!-- 
+if you need to round a top-right corner with 
+    approximate radius r, 
+    and the coordinate of the corner are x and y, 
+The path will look like this:
+Move to (M) / Line to (L) / Horizontal line (H) to x - r, y
+Quadratic Bezier (Q) to x, y + r via x, y
+Line to (L) / Vertical line (V) to the next point 
+
+For example, if the radius is 20 and the corner is in the point 100,100 
+the path will be:
+    H 80,100 Q 100,100 100,120 V ...
+-->
+
+
+<!-- <svg width="300" height="180">
+  <g transform="translate(10,10)">
+    <path d="M 60,0 H 180 Q 190,0 190,
+             10 V 140 Q 190,150 180,
+             150 H 10 Q 0,150 0,
+             140 V 60 Q 0, 0 60,0 Z" fill="#d6d6d6"/>
+  </g>
+</svg> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

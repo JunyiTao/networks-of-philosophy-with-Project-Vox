@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+    <title>InfluNetPhilosopher</title>
+
+    <meta name="description" content="Influence network of philosophers">
+    <meta name="author" content="Junyi Tao">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <!-- Load bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- css -->
+    <link rel='stylesheet' href='css/graph.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/switch.css'>
+    <link rel='stylesheet' href='css/search.css'>
+    <link rel='stylesheet' href='css/info.css'>
+    <!-- js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- data -->
+    <!-- graph -->
+    <script src="js/05-28-2022\graph_mainincluded_dbinflu_pagerank.js"></script>
+    <!-- <script src="js\05-28-2022\graph_womenincluded_dbinflu_pagerank.js"></script> -->
+    <script src="js\05-28-2022\graph__dbinflu_pagerank.js"></script>
+    <script src="js\05-28-2022\graph__inferinflu_pagerank.js"></script>
+    <script src="js\05-28-2022\graph__inferinflu_centrdegr.js"></script>
+    <script src="js\05-28-2022\graph__inferinflu_centrclos.js"></script>
+    <script src="js\05-28-2022\graph__inferinflu_centrbetw.js"></script>
+
+
+    <!-- js -->
+    <script src="js/init.js"></script>
+    <script src="js/d3-graph.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+    
+
+</head>
+
+<body>
+
+<!-- D3 graph -->
+<div id="d3_selectable_force_directed_graph">
+    <svg/>
+</div>
+
+<!-- "Clip to timeline" switch -->
+<!-- <div class="switch-container-timeline">
+  <label class="switch">
+    <input id="clipToTimelineCheckbox" type="checkbox" checked  onclick="onClickClipToTimeline()">
+    <span class="slider round">
+    </span>
+  </label>
+  <p>Timeline</p>
+</div> -->
+
+
+<!-- Create a div where the circle will take place -->
+<!-- <div id="dataviz_builtWithD3"></div> -->
+
+<div class="switch-container-view">
+
+    
+    <!-- Dropdown -->
+
+    <label class="switch">
+        <div class="dropdown">
+            <button 
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton2"
+            
+            data-toggle="dropdown"
+            aria-expanded="false"
+            >
+            <!-- data-mdb-toggle="dropdown" -->
+            Views
+            <span class="caret"></span>
+            </button>
+            
+            <ul class="dropdown-menu" style = "background-color:rgba(240, 240, 240, 0.829)" role="menu" aria-labelledby="dropdownMenuButton2">
+                <li role="presentation"><a class="dropdown-item" role="menuitem" href="#"></a>
+                <button 
+                style="font-size: 13px; text-align: center; border: none; color:rgba(10, 29, 53, 0.889); background-color:rgba(0, 0, 255, 0);" 
+                onclick="createD3Graph(graph, graphContainer.clientWidth, graphContainer.clientHeight);">
+                  V0 | Wiki Philosopher List</button></a></li>
+
+                <li role="presentation"><a class="dropdown-item" role="menuitem" href="#"></a>
+                <button 
+                style="font-size: 13px; text-align: center; border: none; color:rgba(10, 29, 53, 0.889); background-color:rgba(0, 0, 255, 0);" 
+                onclick="createD3Graph(graph_1, graphContainer.clientWidth, graphContainer.clientHeight);">
+                  V1 | + Wiki Women Philosopher List</button></a></li>
+
+                <div class="dropdown-divider"></div>
+
+                <li role="presentation"><a class="dropdown-item" role="menuitem" href="#"></a>
+                <button 
+                style="font-size: 13px; text-align: center; border: none; color:rgba(10, 29, 53, 0.889); background-color:rgba(0, 0, 255, 0);" 
+                onclick="createD3Graph(graph_2_1, graphContainer.clientWidth, graphContainer.clientHeight);">
+                  V2.1 | + Inferred Influence and InfluencedBy</button></a></li>
+
+                <li class="dropdown-header">Various overall influence (node size) calculation</li>
+                
+
+                <li role="presentation"><a class="dropdown-item" role="menuitem" href="#"></a>
+                <button 
+                style="font-size: 13px; text-align: center; border: none; color:rgb(56, 62, 70); background-color:rgba(0, 0, 255, 0);" 
+                onclick="createD3Graph(graph_2_2, graphContainer.clientWidth, graphContainer.clientHeight);">
+                  V2.2 | Degree Centrality</button></a></li>
+
+                <li role="presentation"><a class="dropdown-item" role="menuitem" href="#"></a>
+                <button 
+                style="font-size: 13px; text-align: center; border: none; color:rgb(56, 62, 70); background-color:rgba(0, 0, 255, 0);" 
+                onclick="createD3Graph(graph_2_3, graphContainer.clientWidth, graphContainer.clientHeight);">
+                  V2.3 | Closeness Centrality</button></a></li>
+                
+                <li role="presentation"><a class="dropdown-item" role="menuitem" href="#"></a>
+                <button 
+                style="font-size: 13px; text-align: center; border: none; color:rgb(56, 62, 70); background-color:rgba(0, 0, 255, 0);" 
+                onclick="createD3Graph(graph_2_4, graphContainer.clientWidth, graphContainer.clientHeight);">
+                  V2.4 | Betweenness Centrality</button></a></li>
+            
+                
+            </ul>
+
+            
+        </div>
+        
+  </label>
+  <!-- search -->
+    <div class="search-container">
+        <input id="search" type="search" placeholder="Search" onkeyup="searchByName()">
+    </div>
+
+  <div class="switch-container-womenphilosopher">
+    <label class="switch">
+      <input id="onClickHighlightWomen" type="checkbox" unchecked onclick="onClickHighlightWomen()">
+      <span class="slider round">
+      </span>
+    </label>
+    
+  </div>
+  <div class="switch-container-womenphilosopher">
+    <p>Highlight Women Philosophers</p>
+  </div>
+
+</div>
+
+
+<!-- highlight women philosopher -->
+<!-- call the fucntion: highlightWomenPhilosopher(); -->
+<!-- <div class="switch-container-womenphilosopher">
+    <label class="switch">
+      <input id="onClickHighlightWomen" type="checkbox" unchecked onclick="onClickHighlightWomen()">
+      <span class="slider round">
+      </span>
+    </label>
+    <p>Highlight Women Philosophers</p>
+  </div> -->
+
+
+
+<!-- <div class="search-container">
+    <input id="search" type="search" placeholder="Search" onkeyup="searchByName()">
+</div> -->
+
+<!-- Help & About -->
+<div class="help-container">
+
+    <div class="help-tip" style="font-size: 18px; color: #065e87; font-weight: 600; font-family: 'Times New Roman', Times, serif;">
+        <div>
+            <p id="legendHeader">Representation</p>
+            <!-- node -->
+            <p>
+                Node - Philosopher 
+                <br>Node Size - overall influence (pagerank score by default)
+                <br>Node Color:
+            </p>
+            <div class="legend-row">
+                <div id="regular-node" class="node-symbol"></div>
+                <p>Regular Node</p>
+            </div>
+            <div class="legend-row">
+                <div id="selected-node" class="node-symbol"></div>
+                <p>Selected Node</p>
+            </div>
+            <div class="legend-row">
+                <div id="search-match-node" class="node-symbol"></div>
+                <p>Node matched by search</p>
+            </div>
+            <div class="legend-row">
+                <div id="highlight-node" class="node-symbol"></div>
+                <p>Female Philosophers</p>
+            </div>
+
+            <!-- link -->
+            <p>
+                Link - influence or be influenced
+                <br>Linke Color:
+            </p>
+            <div class="legend-row">
+                <div id="regular-link" class="link-symbol"></div>
+                <p>Regular Link</p>
+            </div>
+            <div class="legend-row">
+                <div id="influences-link" class="link-symbol"></div>
+                <p>Influenced by selected node</p>
+            </div>
+            <div class="legend-row">
+                <div id="influenced-by-link" class="link-symbol"></div>
+                <p>Influence on the selected node</p>
+            </div>
+            
+            <p id="legendHeader">Interactions</p>
+            <p>
+                1. Zoom and Dragon
+                <br>2. Search, select, access more info
+                <br>3. Clip to timeline - missing history
+                <br>4. Highlight women philosophers
+            </p>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- info card -->
+<div id="bottom_sheet" class="modal bottom-sheet modal-fixed-footer">
+    <div id="modalContent" class="modal-content">
+        <!-- <img id="philosopherImg"> -->
+        <div id="philosopherBio">
+            <a id="philosopherName" target="_blank"></a>
+            <p id="philosopherDescription"></p>
+        </div>
+    </div>
+    <!-- close the info card -->
+    <!-- reference: 
+            https://www.freetimelearning.com/materialize-css/materialize-css-buttons.php
+            https://www.freetimelearning.com/materialize-css/materialize-css-icons.php -->
+    <div class="modal-footer">
+        
+        <a id="closeButton" class="btn-floating btn-small btn-flat modal-action modal-close">
+            <!-- the icon -->
+            <i class="material-icons white-text tiny">close</i>
+            <!-- close -->
+        </a>
+    </div>
+</div>
+
+<script>
+    $('.modal').modal({
+            dismissible: false,
+            preventScrolling: false,
+            opacity: .0,
+            inDuration: 500,
+            outDuration: 200,
+            startingTop: '50%',
+            endingTop: '50%'
+        }
+    );
+</script>
+
+<!-- Graph initialization -->
+<script>
+    <!-- initGraph(graph) -->
+    var graphContainer = document.getElementById("d3_selectable_force_directed_graph")
+    <!-- createD3Graph(graph, parentWidth, parentHeight) -->
+    createD3Graph(graph, graphContainer.clientWidth, graphContainer.clientHeight);
+</script>
+
+
+
+
+
+
+
+
+
+</body>

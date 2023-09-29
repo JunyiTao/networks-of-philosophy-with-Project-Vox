@@ -1,0 +1,14 @@
+{
+  "name": "bc276f5c61125f72",
+  "main": "bc276f5c61125f72@379.js",
+  "version": "379.0.0",
+  "homepage": "https://observablehq.com/d/bc276f5c61125f72",
+  "author": {
+    "name": "Junyi Tao",
+    "url": "https://observablehq.com/@fef0a6b521a5d20b"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

@@ -1,0 +1,69 @@
+.node {
+    /* node fill is configued in d3-graph.js: rgba(48, 87, 186, 0.959) */
+    stroke: rgba(155, 175, 195, 0.603);
+    stroke-width: 2px;
+}
+
+.node .selected {
+    fill: rgba(54, 168, 187, 0.98) ;
+    /* fill: rgba(30, 146, 167, 0.705) */
+}
+
+
+
+.node .search-match {
+    fill: rgb(37, 255, 214);
+    stroke: rgb(37, 255, 214);
+    stroke-width: 20px;
+}
+
+
+/* rgba(176, 176, 191, 0.841) */
+.link {
+    stroke: rgba(154, 154, 168, 0.144);
+    stroke-width: 1px;
+}
+
+.link .influences {
+    stroke: rgba(50, 187, 225, 0.959);
+    stroke-width: 6px;
+}
+
+.link .influenced-by {
+    stroke: #8777f1;
+
+    stroke-width: 7px;
+}
+
+#d3_selectable_force_directed_graph {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#d3_selectable_force_directed_graph svg {
+    display: block;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

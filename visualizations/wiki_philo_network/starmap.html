@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Star Map</title>
+<link rel="stylesheet" type="text/css" href="./women_philoconcept_starmap/starmap.css">
+<body>
+
+
+<script type="module">
+
+import define from "./women_philoconcept_starmap/index.js";
+import {Runtime, Library, Inspector} from "./women_philoconcept_starmap/starmap_runtime.js";
+
+const runtime = new Runtime();
+
+
+const main = runtime.module(define, Inspector.into(document.body));
+
+// https://towardsdatascience.com/using-an-observablehq-plot-in-javascript-with-your-own-data-5eabeb6224f5
+
+</script>
+
+<h1 tyle="font-size: 18px; color: #1c37ad; font-weight: 600; font-family: 'Times New Roman', Times, serif;">Star Map: Women Philosophers' Concepts</h1>
+<p >
+    Data: <a target="_blank" style="font-size: 18px; color: #1c37ad; font-weight: 600; font-family: 'Times New Roman', Times, serif;" href="https://historyofwomenphilosophers.org/ecc/#hwps">Encyclopedia of Concise Concepts by Women Philosophers</a> 
+</p>    
+
+
+</body>

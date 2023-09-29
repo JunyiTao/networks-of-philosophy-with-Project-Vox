@@ -1,0 +1,104 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.graph-background {
+    fill: #1e1e20;
+}
+
+.y-axis text {
+    fill: rgb(98, 93, 87);
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size : 15px
+}
+
+.y-axis line {
+    stroke: #ccc
+}
+
+.y-axis path {
+    stroke: #ccc
+}
+
+
+/* info card */
+
+#bottom_sheet {
+
+    position: absolute;
+    right: 0px; 
+    max-height: 50%;
+    max-width: 25%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    
+    background-color: #7f766a81 !important;
+    box-shadow: none !important;
+}
+
+.modal-overlay {
+    pointer-events: none;
+}
+
+.modal-content {
+    /* display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 100%;
+    column-gap: 4%; */
+    border: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: #191c1fa6 !important;
+    margin-bottom: 8px;
+    overflow: hidden
+}
+
+/* #philosopherImg {
+    justify-self: end;
+    max-height: 100%;
+} */
+
+#philosopherName{
+    color: rgba(61, 156, 225, 0.84);
+    line-height: 0.9;
+    max-width: 90%;
+    /* position: absolute; */
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size : 22px;
+    font-weight: 600
+}
+
+#philosopherDescription {
+    color: rgba(209, 219, 239, 0.8);
+    max-width: 95%;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size : 15px
+}
+
+/* is the container...? */
+.modal-footer {
+
+    /* display: flex; */
+    height: 56px !important;
+    justify-content: right;
+    background-color: #191c1fa6 !important;
+    border-top: none !important;
+
+    pointer-events: all;
+}

@@ -1,0 +1,678 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Missing Voice in Philosophy</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ad4179f8-e8c8-463a-bd59-796739e4e6a0" class="page serif"><header><h1 class="page-title">Missing Voice in Philosophy</h1></header><div class="page-body"><p id="335a7adb-30c3-48d3-9bc0-56d16799ac76" class="">
+</p><nav id="38b474c2-8a6e-4528-9936-f2f88a459592" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#829afd8c-b13e-416c-ac0a-b79df3787a6b">1. Introduction</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#922d5383-4a03-4be5-ac64-611b6e6cc3ae"><mark class="highlight-gray">Background and Research Objectives</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#3466fff0-76e5-448d-8ec6-ae0671749716">2. Methodology</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#d88e1a3f-a33a-4a4d-bbfd-244d8e104dc1">V<mark class="highlight-gray">isualization Flow</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#98362c17-f382-4707-905a-f147411e6a9c"><mark class="highlight-gray">Data Preparation</mark></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#6c7eb41f-d259-4762-98d2-ebece0c099fe">Technical Approaches</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#b6c6411d-36eb-4c9d-a802-ff1901cc7d9c">3. Visualization Results </a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#25fdc679-76c2-425a-aa7b-800ac059e6f5">Vis 1: Philosopher Influence Network</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#b84e5f5b-5aa8-431a-9ded-5e32247810e5">Vis2: Missing History</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#05d44167-1cea-4a89-b9c5-6ed3e03d8fde">Vis3: Intellectual Universe</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e636ca7d-d7be-47ee-b5c7-c5a80b8f23c0">Vis 4: Gender Composition</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#378fa475-b93c-4048-b0f1-3bdcd7a36c59">Vis 5: Social Media Community</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#96f6a839-ad0a-4253-82cd-544ababbf52a">4. Discussion and Conclusion</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#5d644921-a743-4fdf-9b41-81a460cf236a">References</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#a730d821-f92d-4bb5-a73b-e6c70c074690">Roles and responsibilities</a></div></nav><h2 id="829afd8c-b13e-416c-ac0a-b79df3787a6b" class="">1. Introduction</h2><h3 id="922d5383-4a03-4be5-ac64-611b6e6cc3ae" class=""><mark class="highlight-gray">Background and Research Objectives</mark></h3><p id="1b585416-4ab6-4de4-931a-afbc873ec639" class="">Can you name 5 women philosophers?</p><p id="2c377a7c-6fdd-44b5-8015-8990ffc94274" class="">Although there are many women who have done extraordinary philosophical work and have significantly influenced other philosophers of their time, their presence and contributions have been overlooked and excluded from the philosophical cannon and the historical records (Witt and Lisa, 2021).</p><p id="717d0ada-e38a-4de1-b147-42af94268c9f" class="">This visualization project aims to acknowledge and highlight underrepresented women philosophers.</p><h2 id="3466fff0-76e5-448d-8ec6-ae0671749716" class="">2. Methodology</h2><h3 id="d88e1a3f-a33a-4a4d-bbfd-244d8e104dc1" class="block-color-gray">V<mark class="highlight-gray">isualization Flow</mark></h3><p id="50567c21-d80d-4906-b0ec-c4950dd48c36" class="">I design a flow of five visualizations, each of which serves the main goal from different perspectives, ranging from academic contributions to social connections.</p><p id="7fa46d34-d2e0-402d-a435-ff3e12ff7a13" class="">Following the &quot;show-not-tell&quot; principle, the first and second visualizations highlight the existing bias in historical data representation in Philosophy; the third visualization shifts the focus from overall connections to the intellectual work of specific women philosophers; and the last two visualizations are concerned with the situation of women as philosophers in today&#x27;s society.</p><ol type="1" id="11298c37-c770-48c7-b59b-0b3281fe542f" class="numbered-list" start="1"><li><strong>(Intellectual) Philosopher Influence Network</strong><p id="e0d8a8bf-bdb3-485c-a1e3-a2b39c6d0d28" class="">To contract the men philosophers centered in the canons with marginalized women philosophers, revealing the bias in data that the influence and contributions of female philosophers have been ignored.</p></li></ol><ol type="1" id="cbb1f9bc-a607-4da0-9c7c-233704245397" class="numbered-list" start="2"><li><strong>(Historical) Missing History</strong><p id="8d011f64-f105-4528-bd60-dbbd6921533a" class="">To show that women philosophers are unjustly ignored and excluded from the narrative of the history of philosophy.</p></li></ol><ol type="1" id="23c087dd-0b17-4735-964e-44497e08ac8b" class="numbered-list" start="3"><li><strong>(Conceptual) Intellectual Universe</strong><p id="cfe90088-3edc-4de1-878e-ea4afe12aaa4" class="">To introduce and appreciate the intelligence of women philosophers and their contributions to philosophy.</p></li></ol><ol type="1" id="e502ac06-3af5-4f38-8e34-5fd0331a9c4a" class="numbered-list" start="4"><li><strong>(Academic/educational) Gender Composition</strong><p id="367a66de-6399-4dbe-9ad7-dc75cf79091d" class="">To demonstrate the gender ratio of faculty members in philosophy programs.</p></li></ol><ol type="1" id="49366852-aa6b-49b5-b919-147f2296d18a" class="numbered-list" start="5"><li><strong>(Social) Philosopher Community on Social Media</strong><p id="13079477-9669-4fcc-90d5-b596c432705d" class="">To summarize and compare today&#x27;s women and men philosophers&#x27; activity and popularity on Twitter.</p></li></ol><h3 id="98362c17-f382-4707-905a-f147411e6a9c" class=""><mark class="highlight-gray">Data Preparation</mark></h3><p id="0e5066e7-045f-44a9-a953-f956cef38654" class="">To answer the research question from various perspectives, I choose and preprocess the data from four sources. </p><ol type="1" id="198825e7-df40-4a84-845e-f1fa76a94545" class="numbered-list" start="1"><li>The data for the Influence Network is extracted by Jonas Mayer (2020) from Wikipedia, which specifies the influence relationship (influence or be influenced by) between philosophers. The data consists of 1008 philosophers’ names, basic descriptions, id, and overall influence scores (Pagerank).  I add a categorical property “gender” and identify the women philosophers by gender-specific pronounces (she/her/hers). </li></ol><ol type="1" id="65698363-c70a-4e52-a84d-65d7340634e0" class="numbered-list" start="2"><li>In the Women Philosopher Concept Starmap, I map the 180 concepts of women philosophers scraped from the website <em>Encyclopedia of Concise Concepts by Women Philosophers</em>. I use python to clean the data and compute the occurrence of each concept and women philosopher (numerical).</li></ol><ol type="1" id="39c82f01-564b-4c99-b740-4db5a10b6e74" class="numbered-list" start="3"><li>The Gender Composition Sunburst Visualization shows on representation of women faculty in 98 U.S. philosophy programs by 2019, with the data provided by Peterson and Hustoft (2021). There are title categories (categorical) and counts of women faculty in each category (numerical). The categories include Emeritus Faculty, Tenure-track Professor (Professor, Associate Professor, or Assistant Professor), and Nontenure-track Professor (Visiting Professor, Adjunct Professor, or Lecturer). </li></ol><ol type="1" id="894b7936-6d5a-4946-b92a-f657e9b47e62" class="numbered-list" start="4"><li>The Twitter data is extracted from the website <a href="https://truesciphi.org/phi.html">Philosophers on Twitter</a>, where Truelove (2022) posted the collection of philosophers’ Twitter accounts and their statistics, including username, account name, websites, self-description, years on Twitter, followers amount, and peer followers amount. To be included, an account must have at least 1,000 Twitter followers and the individuals have a Ph.D. By 2022-May-09 11:03 UTC, there are 1095 entries.<p id="5fc777b5-d543-4689-8bae-ea2ee42ea66c" class="">I first save the HTML files (philosophers_list.html and women_philosopher_list.html) directly from this website and then use python to extract elements from them. I add a categorical property “gender” and then transform the data into json and csv files to import to the visualization.</p></li></ol><h3 id="6c7eb41f-d259-4762-98d2-ebece0c099fe" class="block-color-gray">Technical Approaches</h3><p id="3349de34-43cd-4f36-8b01-05e1217e066f" class="">Data extracting, cleaning, and transforming: python</p><p id="f2ad0579-5c72-4a5d-b0ff-049c887bdab6" class="">Visualization 1-3: D3.js (1 and 2 are adapted from Jonas Mayer’s theschoolofathens (2020); 3 is built based on ObservableHQ’s star map)</p><p id="69b03574-d2c6-43d5-bfbe-24b7419173cd" class="">Visualization 4-5: Plotly Python</p><p id="e6c83e98-5736-4db5-b2bf-072321e3d5b5" class="">
+</p><h2 id="b6c6411d-36eb-4c9d-a802-ff1901cc7d9c" class="">3. Visualization Results </h2><p id="df084593-31b2-4250-a669-f1144fb0526c" class="">The link: <a href="https://www.junyitao.com/research/womenPhilo/">https://www.junyitao.com/research/womenPhilo/</a></p><h3 id="25fdc679-76c2-425a-aa7b-800ac059e6f5" class="">Vis 1: Philosopher Influence Network</h3><figure id="1056a50f-4baa-489a-a684-3025f3d18e21" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled.png"><img style="width:990px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled.png"/></a></figure><ul id="21a8b759-6817-4c89-8bc4-aee9fccf6d2f" class="bulleted-list"><li style="list-style-type:disc"><strong>Idiom</strong>: force-direct network</li></ul><ul id="853f6bd2-b5e9-4a26-bf3a-56dd7c30957d" class="bulleted-list"><li style="list-style-type:disc"><strong>Marks </strong>(point, line) and <strong>Channels </strong>(color, size)<ul id="1755648f-c6da-42e0-ba87-c94c6f9f931f" class="bulleted-list"><li style="list-style-type:circle">Node (point): Philosopher; link (line) : influencing or be influenced relationship</li></ul><ul id="df2b98f2-1bb5-4f7a-8a7a-7b16d7929e09" class="bulleted-list"><li style="list-style-type:circle">Node Size: overall influence of the philosopher (calculated as Pagerank score)</li></ul><ul id="fa948ec9-3790-464c-998a-3f83cf92c221" class="bulleted-list"><li style="list-style-type:circle">Node color: SkyBlue = selected node, Cyan = node matched by search, Yellow = women philosophers</li></ul><ul id="c43ed370-5480-4e0d-8f0b-a2871f1fca82" class="bulleted-list"><li style="list-style-type:circle">Link color: Turquoise = Influenced by selected node, Violet = Influence on the selected node</li></ul></li></ul><ul id="e6bee225-d05a-4a3b-956a-3b7248e43591" class="bulleted-list"><li style="list-style-type:disc"><strong>Efficiency and accuracy</strong>:<p id="7e3c4bfb-87ef-4090-b825-baf13b524cca" class="">Node sizes provide users with an intuitive understanding of the influential power of certain philosophers. The colored nodes and links clearly differentiate themselves from each other and communicate the messages of enlightening, intellectual contributions of philosophers, especially the selected nodes and highlighted women philosophers nodes, shining like stars in the night.</p></li></ul><ul id="0a515965-5b60-4640-8eee-00df901e7a25" class="bulleted-list"><li style="list-style-type:disc"><strong>Interactions and user tasks:</strong></li></ul><p id="6dac805b-89f0-4c5b-9844-eab4d0b5373b" class="">Users can freely zoom in and out and drag the nodes in this network.</p><p id="e5a03e01-e001-4a3e-884d-ad55c8df810b" class="">Click on the information board to look at the guidance about data representation and interactions: </p><figure id="c231c939-7684-40b9-9fc8-0ee9dfc94cd6" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%201.png"><img style="width:853px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%201.png"/></a></figure><p id="c1096a1d-2411-4a54-b90b-5b064b61a35a" class="">The swift button on the top left allows the user to highlight the women philosophers in bright yellow, simulating the lightning stars in the dark sky. The stars are almost unrecognizable, buried in the blackness and dark blue nebula (men philosophers and their influence), which is aligned with our prediction of the marginalization of women in philosophy.</p><figure id="602bf122-8ee6-406f-a93c-a562497dcce2" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%202.png"><img style="width:1081px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%202.png"/></a></figure><p id="cd45d74f-2f9b-4cc0-9602-65ceaf8fd969" class="">This visualization also enables keyword searching, which will match the name containing the typed keywords and colored the corresponding nodes:</p><figure id="96d14648-7b3f-4ddf-90cd-ac1bbd05db85" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%203.png"><img style="width:976px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%203.png"/></a></figure><p id="6059155d-bbcb-489d-9642-8058de403cc9" class="">Click on a node (philosopher) and view the philosopher’s influence on other philosophers and who has influenced him/her/them. An information card will also float upon click, showing the Wikipedia description of the selected philosopher. </p><p id="3a0fca85-97fc-498c-8065-6fdef8278bae" class="">The first screenshot below is the influence network of Immanuel Kant (he/his), who has numerous vastly recognized influence relationships; the second one is the about G. E. M. Anscombe (she/her), whose influence is more sparse.</p><figure id="9c42af53-47e0-4a7e-8c06-9b4509d677ea" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%204.png"><img style="width:1159px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%204.png"/></a></figure><figure id="9ab24c10-e9de-4335-a26c-6799bec028a2" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%205.png"><img style="width:528px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%205.png"/></a></figure><p id="b7e33703-e49e-4548-b6e5-c612ea0ac987" class="">
+</p><h3 id="b84e5f5b-5aa8-431a-9ded-5e32247810e5" class="">Vis2: Missing History</h3><figure id="38428fed-45b8-4b74-917e-ae72817d09eb" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%206.png"><img style="width:1130px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%206.png"/></a></figure><ul id="f34a4d70-0659-419d-af12-53f9974f66ee" class="bulleted-list"><li style="list-style-type:disc"><strong>Idiom</strong>: force-direct network</li></ul><ul id="964636fa-bb8e-45a9-a7e7-cbd3e2d72522" class="bulleted-list"><li style="list-style-type:disc"><strong>Marks </strong>(point, line) and <strong>Channels </strong>(position, color, size)<ul id="2e66f92f-4d62-4b62-ab8c-17c9740d22aa" class="bulleted-list"><li style="list-style-type:circle">Node (point): Philosopher; link (line): influencing or be influenced relationship</li></ul><ul id="ff26dffa-3aa8-4ca7-8040-e442ba2708cd" class="bulleted-list"><li style="list-style-type:circle"><span style="border-bottom:0.05em solid">Node position (vertical, the timeline):  date of birth of the philosopher</span></li></ul><ul id="79ddedec-76ff-4c3c-95ed-70d7c6e585b3" class="bulleted-list"><li style="list-style-type:circle">Node Size: overall influence of the philosopher (calculated as Pagerank score)</li></ul><ul id="4df1dcef-8052-4374-80e3-afed44eb1786" class="bulleted-list"><li style="list-style-type:circle">Node color: SkyBlue = selected node, Cyan = node matched by search, Yellow = women philosophers</li></ul><ul id="767b2eb1-6553-4c32-9798-8b792bac6bf2" class="bulleted-list"><li style="list-style-type:circle">Link color: Turquoise = Influenced by selected node, Violet = Influence on the selected node</li></ul></li></ul><ul id="2b7ea86d-7317-4ec4-b1b8-0c4e92a8d21d" class="bulleted-list"><li style="list-style-type:disc"><strong>Efficiency and accuracy</strong>:<p id="144fd051-d37b-4b4e-96a3-aa5a73057b5e" class="">The timeline view visualizes the abstract philosophy development historically, giving users a sense of philosophers as a community and the lack of women representation throughout the time.</p></li></ul><ul id="17cd9623-d1de-4464-bcb2-c6cca9af229e" class="bulleted-list"><li style="list-style-type:disc"><strong>Interactions and user tasks:</strong></li></ul><p id="89290651-3e20-4f62-8e6d-ff1df4d7e322" class="">The interactions are the same as in the first visualization, as they present the same dataset from two views. The following screenshots capture the highlighting of women philosophers and the annotation of selected nodes and links, respectively.</p><figure id="3a76cf23-4c65-4dfc-a9da-48b9923ff15e" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%207.png"><img style="width:1046px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%207.png"/></a></figure><figure id="ec6426bb-9553-4834-a5fe-4006b01b7112" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%208.png"><img style="width:1043px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%208.png"/></a></figure><p id="a86a021f-5af1-4922-8a73-c03c59d7a561" class="">
+</p><h3 id="05d44167-1cea-4a89-b9c5-6ed3e03d8fde" class="">Vis3: Intellectual Universe</h3><figure id="f713bfb3-3bde-4da8-b3b1-99ec94c6de90" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%209.png"><img style="width:978px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%209.png"/></a></figure><ul id="3a3e8db1-8bfb-4b30-95e6-afc30f9eded7" class="bulleted-list"><li style="list-style-type:disc"><strong>Idiom</strong>: star map</li></ul><ul id="5468fe17-ebc6-445f-9461-0357c704f961" class="bulleted-list"><li style="list-style-type:disc"><strong>Marks </strong>(point) and <strong>Channels </strong>(size, position)<ul id="0d299c90-468b-4099-8fc1-a7ca701f508f" class="bulleted-list"><li style="list-style-type:circle">Point (the star): women philosophers’ concepts</li></ul><ul id="c805e17d-e576-44a3-baf7-ac49efa01301" class="bulleted-list"><li style="list-style-type:circle">Star Size (radius): the occurrence count of the certain concept</li></ul><ul id="a1d0bb0e-b4de-43e3-9019-631f60375ea2" class="bulleted-list"><li style="list-style-type:circle">Star position: distance to the center (  = weighted values of its authors’ visibility = 1/sum(occurrence of the authors) ) and angle (alphabetic order of the concept, which implies the topics clustering to some extent) </li></ul></li></ul><ul id="537cbe52-e5b8-494c-a9fa-a728988f68dd" class="bulleted-list"><li style="list-style-type:disc"><strong>Efficiency and accuracy</strong>:<p id="22144a23-1a0b-4c0a-8204-93a9049f3d81" class="">The star map mimics the stary night, successfully conveying the acknowledgment and appreciation of women philosophers’ intelligence both as individuals and as a group.</p></li></ul><ul id="21b1479e-552d-46df-88b6-fb464f1cb7d5" class="bulleted-list"><li style="list-style-type:disc"><strong>Interactions and user tasks:</strong></li></ul><p id="b0f3f695-4cfa-42b3-a1e5-5fa2ac8154d8" class="">Hovering over a circle mark, users will be able to see the name, occurrence count, and authors of the specific concept. At the same time, a line and a circle crossing the star will show up, helping users to compare it with other concepts.</p><figure id="ab27db26-f254-4dce-8ef6-4ae8137e299a" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2010.png"><img style="width:939px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2010.png"/></a></figure><p id="b874f1c5-1d83-4a8b-be4d-5987d4988473" class="">
+</p><h3 id="e636ca7d-d7be-47ee-b5c7-c5a80b8f23c0" class="">Vis 4: Gender Composition</h3><figure id="5a2dd66b-30d6-4c75-9052-ff00d3033917" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2011.png"><img style="width:902px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2011.png"/></a></figure><ul id="eca1553b-f64a-4210-9b97-e871064f24f1" class="bulleted-list"><li style="list-style-type:disc"><strong>Idiom</strong>: sunburst chart </li></ul><ul id="295bd8d7-7b8a-4667-a070-62b3f3ffbfe9" class="bulleted-list"><li style="list-style-type:disc"><strong>Marks </strong>(area) and <strong>Channels </strong>(color, size)<ul id="d337ef99-ab77-4c74-8246-bc9c2e086aba" class="bulleted-list"><li style="list-style-type:circle">Area: categories of faculty members’ profession titles and their genders</li></ul><ul id="7cccdc54-e11a-457e-aff9-170ac7a3554a" class="bulleted-list"><li style="list-style-type:circle">Area size: the count of philosophers in each title category and genders</li></ul><ul id="7540b548-22be-4b54-8140-c34d8ba301d1" class="bulleted-list"><li style="list-style-type:circle">Area color: CornflowerBlue = title categories; Darkblue = gender as men, Purple = gender as women, Cyan = gender as nonbinary</li></ul></li></ul><ul id="2a295626-a194-4213-bf83-b809984a9b4c" class="bulleted-list"><li style="list-style-type:disc"><strong>Efficiency and accuracy</strong>:<p id="54bd1174-f88c-43c0-9a61-4974446efc4f" class="">The area sizes are perceptually accurate and efficient in showing and contract the distribution/proportion of genders in Philosophy faculty members.</p></li></ul><ul id="b7b45a7f-f44b-409d-a945-0fe0e27d2c0b" class="bulleted-list"><li style="list-style-type:disc"><strong>Interactions and user tasks:</strong></li></ul><p id="c65cd29a-b9d6-4226-9e07-a1de08559b69" class="">Users can click on one parent category and see the branching out of its children categories and associated values. Meanwhile, if hovering the mouse over a label,  its relevant information will be shown. </p><figure id="b6ab7741-71c3-4792-b8ba-201f78953168" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2012.png"><img style="width:936px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2012.png"/></a></figure><figure id="410d1d5e-ae16-4a70-802b-3971f255a9c8" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2013.png"><img style="width:913px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2013.png"/></a></figure><p id="acb57b82-9546-4a5c-8145-db6910d0bb2f" class="">
+</p><h3 id="378fa475-b93c-4048-b0f1-3bdcd7a36c59" class="">Vis 5: Social Media Community</h3><figure id="c8fc55b9-f1a7-4a4e-87aa-6a2de93c436b" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2014.png"><img style="width:1892px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2014.png"/></a></figure><ul id="c1a60f79-3466-40d8-80d3-79ce91c2834b" class="bulleted-list"><li style="list-style-type:disc"><strong>Idiom</strong>: bubble chart</li></ul><ul id="fd711ad8-7841-408e-851b-fa90948c75ee" class="bulleted-list"><li style="list-style-type:disc"><strong>Marks </strong>(bubble) and <strong>Channels </strong>(position, color, size)<ul id="d092e9f4-fd28-4cb1-969b-312f89f6d845" class="bulleted-list"><li style="list-style-type:circle">Bubble: philosopher’s Twitter account</li></ul><ul id="37f03a6d-455d-40fa-8486-c20a48ac5c0a" class="bulleted-list"><li style="list-style-type:circle">Bubble size: the count of peer follows of the Twitter account</li></ul><ul id="ce1a0c82-c838-4195-a883-544046d4cf3b" class="bulleted-list"><li style="list-style-type:circle">Bubble position: x-axis (count of the total followers) and y-axis (the account’s years on Twitter)</li></ul><ul id="7f13650d-e3e9-442b-a20e-d3e49bdcf512" class="bulleted-list"><li style="list-style-type:circle">Bubble color: Red = gender as women, Blue = gender as men or nonbinary</li></ul></li></ul><ul id="1797dd7e-1eca-4b7f-bf69-407ee8979015" class="bulleted-list"><li style="list-style-type:disc"><strong>Efficiency and accuracy</strong>:<p id="9655105c-fdd0-430b-9a55-7eab6b709247" class="">Though the bubble sizes are not very differentiable, the red and blue colors clearly show the overall distribution of the visibility and popularity of men and women philosophers on Twitter.</p></li></ul><ul id="840d53cb-279e-42ec-8d06-64bc0737a576" class="bulleted-list"><li style="list-style-type:disc"><strong>Interactions and user tasks: </strong></li></ul><p id="c1b3687a-ac24-4bf8-9b59-ff493564da18" class="">To gain a more concentrated focus and reduce distractions, users can select certain items and examine the local features of the information. The unselected parts will fade into the background, making the selected part more noticeable.</p><figure id="402a3cf4-ba5a-4e8c-b0a6-37001ffb9d0c" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2015.png"><img style="width:1875px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2015.png"/></a></figure><figure id="d58d78ca-d368-46a0-ac9d-0eaf03cb08c4" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2016.png"><img style="width:1892px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2016.png"/></a></figure><p id="10d60579-4cc8-4a4b-8bf1-0dbd7bf17e9d" class="">Users can also access the information in detail with the filter and zoom-in function. The axis is going to be scaled accordingly. </p><figure id="4b61659e-edb1-4927-a800-cd13261be2f1" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2017.png"><img style="width:1895px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2017.png"/></a></figure><figure id="32aabe51-908a-4eb5-84ca-5bdc613e6812" class="image"><a href="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2018.png"><img style="width:1910px" src="Missing%20Voice%20in%20Philosophy%201056a50f4baa489aa6843025f3d18e21/Untitled%2018.png"/></a></figure><h2 id="96f6a839-ad0a-4253-82cd-544ababbf52a" class="">4. Discussion and Conclusion</h2><p id="cd6ba04e-9546-41f8-8b7d-35c8cd622c4d" class="">My visualizations demonstrate the marginalization and omission of women in the history of Philosophy. They also show today’s women philosophers’ situations. </p><p id="9ed6558e-27c6-43cd-aeb2-8e508a6ae66e" class=""><strong>User tasks and Interactions </strong></p><p id="fa6a280a-c558-473f-9715-0b3155ce974f" class="">Following the flow of the visualizations, users will first be presented with the visualized story of women philosophers being marginalized and discover the voices missing from the traditional narrative. Beyond browsing and exploring the massive visualized information, they are able to search for details of the derived information and have a more local concentration on the information by zooming selecting, and filtering. Finally, they are expected to compare and summarize the patterns of mainstream and marginalized groups. Hopefully, they will have a sharper eye for identifying voices that are unjustly ignored in the future.</p><p id="a30dc8a2-aa99-4e85-9ec0-4f549e7d7515" class=""><strong>Efficiency </strong></p><p id="cafcbfb9-7e1e-4275-b4ff-6d69589aa769" class="">Overall, the visualizations are efficient because they employ appropriate idioms and encoding to achieve the goal of discovering and highlighting women philosophers who have been overlooked in the history of philosophy. Specifically, I use networks to show the big picture and recognized connections among philosophers, use sunburst chart and bubble chart to demonstrate the gender distribution in Philosophy, and use star map to facilitate user exploration and appreciation of the ideas of women philosophers.</p><p id="40763f46-8fba-40dc-8830-dd390cb6c205" class=""><strong>Pros/Cons</strong></p><p id="5268e4d2-7111-4182-a7b5-b10c572be6ff" class="">This project features a variety of perspectives, from conceptual to interpersonal. Narratives are examined in different time periods - we review the history of philosophy, but also examine the current state of women&#x27;s philosophy in academia and social media communities.</p><p id="6d6eddc0-6945-455e-b85c-a32c76773797" class="">However, the transition between perspectives could be smoother to provide a more integrated perspective and way of thinking about the data representations.</p><p id="cb2b21ce-bf35-4ec1-a879-ea7f20cc5f40" class=""><strong>Limitations and Potential Resolutions</strong></p><p id="a6c48a05-4a75-4c8b-832c-8cadd8369c8e" class="">Due to limited time and resources, this visualization project is primarily descriptive, i.e., it presents existing data without very much statistical analysis. But it is also my aspiration to investigate the patterns of marginalization, the underlying assumptions of mainstream narratives, and the historical representations of gender inequality in Philosophy. I might use machine learning methods to model the patterns of marginalization and make corresponding prediction models. Furthermore, my future research will extend to other marginalized and ignored groups.</p><h2 id="5d644921-a743-4fdf-9b41-81a460cf236a" class="">References</h2><p id="249d429d-c84e-4914-bea7-33874fda731c" class="">Hagengruber and Waithe. (n.d.). The Encyclopedia of Concise Concepts by Women Philosophers. Retrieved May 09, 2022, from <a href="https://historyofwomenphilosophers.org/ecc/#hwps">https://historyofwomenphilosophers.org/ecc/#hwps</a></p><p id="0d779460-ae9f-4cd0-8c27-8c85c0a12bcc" class="">Kelly Truelove. (2022). Philosophers on Twitter. Retrieved May 09, 2022, from <a href="https://truesciphi.org/phi.html">https://truesciphi.org/phi.html</a></p>
+	<p id="61c9b68e-a20f-4434-901f-66379fac2eab" class="">Peterson and Hustoft. (2021). Second Wave Survey of Women’s Representation in U.S. Philosophy Graduate Programs. Retrieved May 07, 2022, from <a href="https://doi.org/10.7910/DVN/IJZW8Y">https://doi.org/10.7910/DVN/IJZW8Y</a></p><p id="cfba9fd9-538f-4ab9-9179-b74d1fec36e4" class="">Witt, Charlotte and Lisa Shapiro, &quot;Feminist History of Philosophy&quot;, <em>The Stanford Encyclopedia of Philosophy </em>(Summer 2021 Edition), Edward N. Zalta (ed.), URL = &lt;https://plato.stanford.edu/archives/sum2021/entries/feminism-femhist/&gt;</p><p id="24ea0e99-7c37-440f-9bc8-1c55f19f60d6" class="">
+</p><h2 id="a730d821-f92d-4bb5-a73b-e6c70c074690" class="">Roles and responsibilities</h2><p id="0b625186-28f8-4de1-a0fe-1cde6045dc86" class="">Brainstorming and idealization: Junyi Tao</p><p id="c0a27993-5ef2-4ec0-81f6-428e143b2660" class="">Data searching, extraction, and cleaning: Junyi Tao</p><p id="2f534167-46c9-4ff0-b341-058680854824" class="">Visualization building and publishing: Junyi Tao</p><p id="d1e96344-e2eb-47c3-a781-bf8dc58683e7" class="">Writing and editing: Junyi Tao</p><p id="45041ad2-2d20-450a-922a-f537a853c460" class="">
+</p></div></article></body></html>
