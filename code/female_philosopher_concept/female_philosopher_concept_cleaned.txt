@@ -1,0 +1,221 @@
+concept,author,time
+Justice,Catherine of Siena,1347–1380
+Abolition,Frances (Fanny) Wright,1795–1852
+Abolitionism,Lydia Maria Child,1802–1880
+Abortion,G.E.M. Anscombe,1919–2001
+Action,Hannah Arendt,1905–1975
+Action,Jeanne-Marie Bouvier de la Motte Guyon,1648–1717)
+Aesthetics,Vernon Lee (Violet Paget),1856–1935
+Affective Memory,Vernon Lee (Violet Paget),1856–1935
+"Analysis, directional",Susan Stebbing,1885–1943
+Ancient Medicine and Method,Maja Hudoletnjak Grgić,1964–2010
+Antiscientism,Mary Midgley,1919–2018
+Art,Anne Le Fèvre Dacier,1647–1720
+Art,Madeleine de Scudéry,1607–1701
+Art,Vernon Lee (Violet Paget),1856–1935
+"Art, Social Significance of",Vernon Lee (Violet Paget),1856–1935
+Artistic Experience: Physiology,Vernon Lee (Violet Paget),1856–1935
+Artistic experience: Psychology,Vernon Lee (Violet Paget),1856–1935
+Ascent,Diotima of Mantinea,ca. 440 b.c.e.
+Atheism,Frances (Fanny) Wright,1795–1852
+Atheism,Frances Power Cobbe,1822–1904
+Attention,Iri s Murdoch,1919–1999
+Attention,Simone Weil,1909–1943
+Authority and Gender,Angélique Arnauld,1591–1661
+Autobiography,Sarah Kofman,1934–1994
+Barbarism,Simone Weil,1909–1943
+"Being, Nature of",Antoinette Brown Blackwell,1825–1921
+Basis of Morality,Sophie de Grouchy,1764–1822
+"Beautiful, the",Vernon Lee (Violet Paget),1856–1935
+Beauty,Diotima of Mantinea,ca. 440 B.C.E.
+Beauty,Murasaki Shikibu,ca. 973–ca. 1020
+Benevolent Utility (Duty of),Catharine Beecher,1800–1878
+Care Ethics,Jane Addams,1860–1935
+Cause and Effect,Catharine Beecher,1800–1878
+Certainty,Mechthild von Magdeburg,1207–1282
+Certitude and Doubt,Angélique de Saint-Jean Arnauld d’Andilly,1624–1684
+Civil society,Mary Wollstonecraft,1759–1797
+Community,Edith Stein,1891–1942
+Conformity,Harriet Taylor Mill,1807–1858
+Conscience (Role in Morality),Catharine Beecher,1800–1878
+Created Beings and Human Nature,Mary Astell,1666–1731
+Creation,Anne Conway,1631–1679
+Creationism,Anne Bradstreet,1612–1672
+Denomination / Determination,Emily Elizabeth Constance Jones,1848–1922
+Darwinism and Morality,Frances Power Cobbe,1822–1904
+Death In Karoline Von Günderrode,,1780–1806
+Determinism and Freedom,Angélique Arnauld,1591–1661
+Disinterested Love/Friendship,"Anne-Thérèse de Marguenat de Courcelles, Marquise de Lambert",1647–1733
+Dissolve,Alice Ambrose,1906–2001
+Divine attributes,Catherine of Siena,1347–1380
+Divinity (Knowledge of),Catharine Beecher,1800–1878
+Domestic Violence,Harriet Taylor Mill,1807–1858
+Duties to Animals,Frances Power Cobbe,1822–1904
+Duties toward Elders,Ban Zhao,5–ca. 116 CE
+Duties toward Family,Ban Zhao,5–ca. 116 CE
+Duties towards strangers/others,Sophie de Grouchy,1764–1822
+Economic Duties of Governments towards Citizens,Mercy Otis Warren,1727–1814
+Economic Equality,Mary Wollstonecraft,1759–1797
+Economic Rights of Individuals,Mercy Otis Warren,1727–1814
+Education (Right of),Mercy Otis Warren,1727–1814
+Education of Women,Ban Zhao,5–ca. 116 CE
+Education of Women,Mary Astell,1666–1731
+Education,Ednah Dow Cheney,1824–1904
+Education,Jacqueline Pascal,1625–1661
+Empathy,Edith Stein,1891–1942
+Empathy,Sophie de Grouchy,1764–1822
+Equality of the Races,Lydia Maria Child,1802–1880
+Eroticism,"Andreas-Salomé, Lou",1861–1937
+Ethic of Intention,Héloïse,1090–1164
+Ethics of Resistance,Angélique de Saint-Jean Arnauld d’Andilly,1624–1684
+Ethics of Resistance,Agnès Arnauld,1593–1671
+Evolutionary Biology,Antoinette Brown Blackwell,1825–1921
+Evolutionary Cosmology,Antoinette Brown Blackwell,1825–1921
+Existentialism,Simone de Beauvoir,1908–1986
+"Existence of God, Arguments for / Revelation",Mary Astell,1666–1731
+Existence,Jeanne Hersch,1910-2000
+Existential Freedom,Jeanne Hersch,1910–2000
+Faith,"Andreas-Salomé, Lou",1861–1937
+Faith,Mechthild von Magdeburg,1207–1282
+Fallacies (Metaphysical),Hannah Arendt,1905–1975
+Family,Sophie de Grouchy,1764–1822
+"Fear, liberalism of",Judith Shklar,1928-1992
+Feeling of Self–Worth (Selbstgefühl),Else Voigtländer,1882–1946
+Feminism,"Andreas-Salomé, Lou",1861–1937
+Feminism,Anne Bradstreet,1612–1672
+Feminism,Vernon Lee (Violet Paget),1856–1935
+Feminism,Im Yunjidang 임윤지당 任允摯堂,1721–1793
+Feminist Utilitarianism,Anna Doyle Wheeler,1785–1848
+Force,Simone Weil,1909 – 1943
+Free Will vs. Determinism (Fatalism),Catharine Beecher,1800–1878
+Free Will,Elly Ebenspanger,1904–1942?
+Free Will,Elza Kučera,1883–1972
+Freedom and Determinism,Madeleine de Scudéry,1607–1701
+Freedom, Individual (Conditions for),Mercy Otis Warren,1727–1814
+Freedom,Anne Conway,1631–1679
+Freedom,Jacqueline Pascal,1625–1661
+Friendship,Héloïse,1090–1164
+Fulfillment and Capability (Können),Hedwig Conrad-Martius,1888–1966
+Gender and Equality,Marie le Jars de Gournay,1665–1645
+Gender,Lou Andreas-Salomé,1861–1937
+Gender Equality,Harriet Taylor Mill,1807–1858
+Gender Equality,Isotta Nogarola,1418–1466
+Gender and Equality,Madeleine de Scudéry,1607–1701
+God's Mind and Human Knowledge,Damaris Cudworth Masham,1659–1708
+"God, Nature of",Anne Conway,1631–1679
+God,Lou Andreas-Salomé,1861–1937
+God’s Nature,Mary Astell,1666–1731
+Gradual Theory of Freedom,Jeanne Hersch,1910–2000
+Human Nature,Mercy Otis Warren,1727–1814
+Human Sexuality,Frances (Fanny) Wright,1795–1852
+Hope,Julian of Norwich,1342–1416
+Human Nature,Damaris Cudworth Masham,1659–1708
+Human Rights,Sophie de Grouchy,1764–1822
+Human Soul,Catherine of Siena,1347–1380
+Humor,Sarah Kofman,1934–1994
+Hylomorphism,Oliva Sabuco de Nantes,1562–1626?
+Hypocrisy,Héloïse,1090–1164
+Hypotheses,Émilie Du Châtelet,1706–1749)
+Intension / Extension,Emily Elizabeth Constance Jones,1848–1922
+Identity / Nonidentity,Emily Elizabeth Constance Jones,1848–1922
+Immanence,Edith Stein,1891–1942
+Immortality,Diotima of Mantinea,ca. 440 B.C.E.
+Inner Freedom and Outer Conditions of Liberty,Jeanne Hersch,1910–2000
+Intention,G.E.M. Anscombe,1919–2001
+Intuitive Morals,Frances Power Cobbe,1822–1904
+Judging,Hannah Arendt,1905–1975
+Justice,Aesara of Lucania,4th or 3rd century BC
+Knowledge,Madeleine de Scudéry,1607–1701
+God (Knowledge of),Anne Sophie Swetchine,1782–1857
+God (Knowledge of),Jeanne-Marie Bouvier de la Motte Guyon,1648–1717
+Divinity (Knowledge of),Edith Stein,1891–1942
+Knowledge,Catherine of Siena,1347–1380
+Knowledge,"Madeleine de Souvré, Marquise de Sablé",1599–1678
+Labor,Anna Doyle Wheeler,1785–1848
+Language and Literature,Marie le Jars de Gournay,1665–1645
+Language,Anne Le Fèvre Dacier,1647–1720
+Law of Significant Assertion,Emily Elizabeth Constance Jones,1848–1922
+Lebensphilosophie,Lou Andreas-Salomé,1861–1937
+Liberated Woman,Lou Andreas-Salomé,1861–1937
+Liberty,Anne Sophie Swetchine,1782–1857
+Life,Karoline Von Günderrode,1780–1806
+Literature,Anne Le Fèvre Dacier,1647–1720
+Love / Religious Faith (Nature of),Mary Astell,1666–1731
+Love,Karoline Von Günderrode,1780–1806
+Love,Catherine of Siena,1347–1380
+Love,Diotima of Mantinea,ca. 440 B.C.E.
+Love,Héloïse,1101–1164
+Love,Jeanne-Marie Bouvier de la Motte Guyon,1648–1717
+Love,"Madeleine de Souvré, marquise de Sablé",1599–1678
+Love,Murasaki Shikibu,ca. 973–ca. 1020
+Love,Simone de Beauvoir,1908–1986
+Marriage,Anna Doyle Wheeler,1785–1848
+Marriage,Harriet Taylor Mill,1807–1858
+Marriage,Héloïse,1090–1164
+Mathematics,Simone Weil,1909-1943
+Mind-Body Problem,Mary Astell,1666–1731
+Mind-body Identity,Antoinette Brown Blackwell,1825–1921
+Misandry,Helene Druskowitz,1856–1918
+Misogyny,Anne Sophie Swetchine,1782–1857
+Modesty,Ban Zhao,5–ca. 116 CE
+Monastic Life and Public Display,Héloïse,1090–1164
+Morality and Religion,Frances Power Cobbe,1822–1904
+Motherhood,Simone de Beauvoir,1908–1986
+Music and Memory,Vernon Lee (Violet Paget),1856–1935
+Natural Equality of Sexes,Antoinette Brown Blackwell,1825–1921
+Natural Goodness,Philippa Foot,1920–2010
+Natural Law Theory,Aesara of Lucania,4th or 3rd century BC
+Natural Religion,Antoinette Brown Blackwell,1825–1921
+Nature,Anne Sophie Swetchine,1782–1857
+Nature,Antoinette du Ligier de la Garde, Mme Deshoulières,1638–1694
+Ontology of Social Life,Edith Stein,1891–1942
+Otherness,Simone de Beauvoir,1908-1986
+Pacifism,Vernon Lee (Violet Paget),1856–1935
+Pain,Sophie de Grouchy,1764–1822
+Participatory Democracy,Mercy Otis Warren,1727–1814
+Passions,"Christina Wasa, Queen of Sweden",1626–1689
+Passions,"Marguerite Hessein, Mme de La Sablière",1640–1693
+Perception and Certainty,Mary Astell,1666–1731
+Perfectibility,Anne Conway,1631–1679
+Education (Philosophy of),Mme de Maintenon,1635–1719
+Medicine (Philosophy of),Aesara of Lucania,4th or 3rd century BC
+Religion (Philosophy of),"Marie de Rabutin-Chantal, Marquise de Sévigné",1626–1696
+Pleasure,Sophie de Grouchy,1764–1822
+Politeness,Anne Sophie Swetchine,1782–1857
+Political Liberty,Jeanne Hersch,1910–2000
+Potted thinking,Susan Stebbing,1885–1943
+Pragmatism,Jane Addams,1860–1935
+Progress,Anne Sophie Swetchine,1782–1857
+Propriety,Ban Zhao,5–ca. 116 CE
+Proximity Epistemology,Jane Addams,1860–1935
+Puritanism,Anne Bradstreet,1612–1672
+Religious Freedom,Frances (Fanny) Wright,1795–1852
+Reality,Jeanne Hersch,1910–2000
+Reason,Marguerite Porete,1250/60–1310
+Religion,Madeleine de Scudéry,1607–1701
+Religious Epistemology of Agnès Arnauld,,1593–1671
+Religious Faith,Edith Stein,1891–1942
+Religious Freedom,Ednah Dow Cheney,1824–1904
+Religious Knowledge,Agnès Arnauld,1593–1671
+Religious Knowledge,"Marguerite Hessein, Mme de La Sablière",1640–1693
+Religious Truth,Antoinette Brown Blackwell,1825–1921
+Republicanism,Mercy Otis Warren,1727–1814
+Responsible Freedom,Jeanne Hersch,1910–2000
+Revelation,Antoinette Brown Blackwell,1825–1921
+Revolution,Mary Wollstonecraft,1759–1797
+Scientism,Mary Midgley,1919–2018
+Sagehood,Im Yunjidang 임윤지당 任允摯堂,1721-1793
+Salvation Faith,Edith Stein,1891–1942
+Self-Interest,Ayn Rand,1905–1982
+Self,Edith Stein,1891–1942
+Sexuo-economics,Charlotte Perkins Gilman,1860–1935
+Sexuality,Murasaki Shikibu,ca. 973–ca. 1020
+Slavery / Abolitionism,Ednah Dow Cheney,1824–1904
+Slavery,Frances (Fanny) Wright,1795–1852
+Social responsibility of individuals,Jane Addams,1860–1935
+Social Progress,Jane Addams,1860–1935
+Soul,Aesara of Lucania,4th or 3rd century BC
+Soul,Diotima of Mantinea,ca. 440 B.C.E.
+Soul,Edith Stein,1891–1942
+States’ Rights,Mercy Otis Warren,1727–1814
+Substance,Anne Conway,1631–1679
